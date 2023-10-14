@@ -1,0 +1,33 @@
+/* Define the color transitions */
+
+.logo-svg {
+    transition: stroke 1s ease;
+}
+
+.path-fill {
+    transition: fill 1s ease;
+}
+
+/* Define the color states */
+
+.logo-svg:hover {
+    stroke: var(--color-stroke, black); /* Default to black */
+}
+
+.path-fill:hover {
+    fill: var(--color-fill, transparent); /* Default to transparent */
+}
+
+/* Define the metallic-like gradients */
+
+.gold {
+    --color-stroke: linear-gradient(45deg, #ffd700, #d4af37);
+}
+
+.platinum {
+    --color-stroke: linear-gradient(45deg, #e5e4e2, #7f7f7f);
+}
+
+.black {
+    --color-stroke: black;
+}
